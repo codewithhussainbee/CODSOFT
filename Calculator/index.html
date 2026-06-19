@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Glass Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+        <div class="calculator-box">
+            
+            <div class="calc-header">
+                <span>CASIO-INSPIRED UI</span>
+                <div class="status-dot"></div>
+            </div>
+
+            <div class="screen-wrapper">
+                <div id="txt-history" class="history-layer"></div>
+                <div id="txt-output" class="output-layer">0</div>
+            </div>
+
+            <div class="keys-layout">
+                <button class="key utility-key" data-cmd="clear">C</button>
+                <button class="key utility-key" data-cmd="backspace">⌫</button>
+                <button class="key utility-key" data-cmd="percent">%</button>
+                <button class="key math-key" data-op="/">÷</button>
+
+                <button class="key num-key" data-val="7">7</button>
+                <button class="key num-key" data-val="8">8</button>
+                <button class="key num-key" data-val="9">9</button>
+                <button class="key math-key" data-op="*">×</button>
+
+                <button class="key num-key" data-val="4">4</button>
+                <button class="key num-key" data-val="5">5</button>
+                <button class="key num-key" data-val="6">6</button>
+                <button class="key math-key" data-op="-">−</button>
+
+                <button class="key num-key" data-val="1">1</button>
+                <button class="key num-key" data-val="2">2</button>
+                <button class="key num-key" data-val="3">3</button>
+                <button class="key math-key" data-op="+">+</button>
+
+                <button class="key num-key" data-val="0">0</button>
+                <button class="key num-key" data-val=".">.</button>
+                <button class="key submission-key" id="btn-exec" data-cmd="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
