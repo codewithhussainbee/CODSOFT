@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Quiz - Quiz Maker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create a New Quiz</h2>
+        <form id="createQuizForm">
+            <div class="form-group">
+                <label for="quizTitle">Quiz Title</label>
+                <input type="text" id="quizTitle" placeholder="Enter quiz title" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="quizDescription">Description</label>
+                <textarea id="quizDescription" placeholder="Enter quiz details..." rows="3"></textarea>
+            </div>
+
+            <div id="questionsContainer">
+                <h3>Questions</h3>
+                <div class="question-block">
+                    <input type="text" placeholder="Question Text" required>
+                    <input type="text" placeholder="Option 1" required>
+                    <input type="text" placeholder="Option 2" required>
+                    <input type="text" placeholder="Correct Answer" placeholder="Must match option exactly" required>
+                </div>
+            </div>
+
+            <button type="button" id="addQuestionBtn" class="btn btn-secondary">Add Another Question</button>
+            <button type="submit" class="btn">Save & Publish Quiz</button>
+        </form>
+        <p><a href="quizzes.html">← Back to Quizzes</a></p>
+    </div>
+    <script src="js/createQuiz.js"></script>
+</body>
+</html>
